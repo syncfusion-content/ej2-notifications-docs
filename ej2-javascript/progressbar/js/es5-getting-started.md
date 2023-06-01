@@ -62,7 +62,7 @@ Refer the below code to find location ProgressBar script and style file.
 After copying the files, then you can refer the ProgressBar scripts into the `index.html` file.
 The below html code example shows the minimal dependency of ProgressBar.
 
-```
+```html
 
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">

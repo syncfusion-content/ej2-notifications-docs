@@ -136,7 +136,7 @@ The Toast can be rendered by defining an array of `items`.
 
 **Step 3:** Create a HTML page (index.html) in `myapp` location and add the CDN link references. Now, add the `Toast` element and initiate the `Essential JS 2 Toast` component in the index.html by using following code.
 
-```
+```html
 
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
