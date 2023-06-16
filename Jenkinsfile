@@ -74,7 +74,7 @@ node('content')
 
     stage 'Delete Workspace'
     
-    def files = findFiles(glob: '**/cireports/*.*')      
+    def files = findFiles(glob: '**/cireports/spellcheck/*.*')      
         
     if(files.size() > 0)         
     {         
