@@ -11,7 +11,9 @@ domainurl: ##DomainURL##
 
 # Getting started in ##Platform_Name## Message control
 
-This section explains the steps required to create a simple [JavaScript Message](https://www.syncfusion.com/javascript-ui-controls/js-message) control and configure its available functionalities in the TypeScript using the Essential JS 2 [quickstart](https://github.com/syncfusion/ej2-quickstart) seed repository. This seed repository is pre-configured with all the Essential JS 2 packages.
+This section explains the steps required to create a simple [JavaScript Message](https://www.syncfusion.com/javascript-ui-controls/js-message) control and configure its available functionalities in the TypeScript using the Essential JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is pre-configured with all the Essential JS 2 packages.
+
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
 
 ## Dependencies
 
@@ -24,55 +26,42 @@ The following list of dependencies are required to use the Message control in th
   |-- @syncfusion/ej2-popups
 ```
 
-## Setup for local development
+## Set up development environment
 
-To get started with the Message control, clone the Essential JS 2 [`quickstart`](https://github.com/syncfusion/ej2-quickstart) project, and install the necessary npm packages by using the following command line scripts.
-
-```
-git clone https://github.com/syncfusion/ej2-quickstart.git quickstart
-cd quickstart
-npm install
-```
-
-## Configuring system JS
-
-The [Syncfusion Message packages](#dependencies) should be mapped in the `system.config.js` configuration file.
-
-```bash
-System.config({
-    paths: {
-        'npm:': './node_modules/',
-        'syncfusion:': 'npm:@syncfusion/'
-    },
-    map: {
-        app: 'app',
-
-        //Syncfusion packages mapping
-        "@syncfusion/ej2-base": "syncfusion:ej2-base/dist/ej2-base.umd.min.js",
-        "@syncfusion/ej2-buttons":"syncfusion:ej2-buttons/dist/ej2-buttons.umd.min.js",
-        "@syncfusion/ej2-popups":"syncfusion:ej2-popups/dist/ej2-popups.umd.min.js",
-        "@syncfusion/ej2-notifications":"syncfusion:ej2-notifications/dist/ej2-notifications.umd.min.js"
-    },
-    packages: {
-        'app': { main: 'app', defaultExtension: 'js' }
-    }
-});
-
-System.import('app');
+Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
 ```
-
-## Adding CSS reference
-
-The combined CSS files are available in the Essential JS 2 package root folder. This can be referenced in the `[src/styles/styles.css]` file using the following code.
-
-```bash
-@import '../../node_modules/@syncfusion/ej2-base/styles/material.css';
-@import '../../node_modules/@syncfusion/ej2-notifications/styles/material.css';
-
+    git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- ej2-quickstart
 ```
 
-> To add the individual control CSS, refer to the [individual control theme](../appearance/theme#referring-individual-control-theme) section. To use the combined control styles, make use of Syncfusion [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in the application.
+After cloning the application in the `ej2-quickstart` folder, run the following command line to navigate to the `ej2-quickstart` folder.
+
+```
+    cd ej2-quickstart
+```
+
+## Add Syncfusion JavaScript packages
+
+Syncfusion JavaScript (Essential JS 2) packages are available on the [npmjs.com](https://www.npmjs.com/~syncfusionorg) public registry. You can install all Syncfusion JavaScript (Essential JS 2) controls in a single [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package or individual packages for each control.
+
+The quickstart application is preconfigured with the dependent [@syncfusion/ej2](https://www.npmjs.com/package/@syncfusion/ej2) package in the `~/package.json` file. Use the following command to install the dependent npm packages from the command prompt.
+
+```
+    npm install
+```
+
+## Import the Syncfusion CSS styles
+
+Syncfusion JavaScript controls come with [built-in themes](https://ej2.syncfusion.com/documentation/appearance/theme/), which are available in the installed packages. It's easy to adapt the Syncfusion JavaScript controls to match the style of your application by referring to one of the built-in themes.
+
+The quickstart application is preconfigured to use the `Material` theme in the `~/src/styles/styles.css` file, as shown below: 
+
+```
+  @import "../../node_modules/@syncfusion/ej2/material.css";
+```
+
+> You can check out the [themes](https://ej2.syncfusion.com/documentation/appearance/theme/) section to know more about built-in themes and CSS reference for individual controls.
+> To use the combined control styles, make use of Syncfusion [`CRG`](https://crg.syncfusion.com/) (Custom Resource Generator) in the application.
 
 ## Add Message control
 
@@ -88,10 +77,6 @@ Now, start adding the Essential JS 2 Message control to the application. To get 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <meta name="description" content="Essential JS 2 Message" />
-    <meta name="author" content="Syncfusion" />
-    <link rel="shortcut icon" href="resources/favicon.ico" />
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="/styles/styles.css" rel="stylesheet" />
 </head>
 <body>
     <!--Element which will render as Message-->
