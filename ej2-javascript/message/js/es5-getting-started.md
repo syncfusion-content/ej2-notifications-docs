@@ -41,8 +41,7 @@ The [Syncfusion Message packages](#dependencies) should be mapped in the `system
 ```bash
 System.config({
     paths: {
-        'npm:': './node_modules/',
-        'syncfusion:': 'npm:@syncfusion/'  
+        'syncfusion:': './node_modules/@syncfusion/'
     },
     map: {
         app: 'app',
@@ -59,7 +58,6 @@ System.config({
 });
 
 System.import('app');
-
 ```
 
 ## Adding CSS reference
@@ -85,9 +83,11 @@ Now, start adding the Essential JS 2 Message control to the application. To get 
 
 <head>
     <title>Essential JS 2 Message control</title>
-    <link href="https://cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.syncfusion.com/ej2/ej2-navigations/styles/material.css" rel="stylesheet" type="text/css"/>
-    <script src="//cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/ej2-notifications/dist/global/ej2-notifications.min.js" type="text/javascript"></script>
+    <script src="node_modules/systemjs/dist/system.src.js" type="text/javascript"></script>
+    <script src="system.config.js"></script>
 </head>
 <body>
     <!--Element which will render as Message-->

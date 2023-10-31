@@ -41,8 +41,7 @@ The [Syncfusion Message packages](#dependencies) should be mapped in the `system
 ```bash
 System.config({
     paths: {
-        'npm:': './node_modules/',
-        'syncfusion:': 'npm:@syncfusion/'
+        'syncfusion:': './node_modules/@syncfusion/'
     },
     map: {
         app: 'app',
@@ -91,7 +90,9 @@ Now, start adding the Essential JS 2 Message control to the application. To get 
     <meta name="author" content="Syncfusion" />
     <link rel="shortcut icon" href="resources/favicon.ico" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="/styles/styles.css" rel="stylesheet" />
+    <link href="./styles/styles.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="system.config.js"></script>
 </head>
 <body>
     <!--Element which will render as Message-->
