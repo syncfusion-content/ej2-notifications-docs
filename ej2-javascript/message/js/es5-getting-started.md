@@ -86,7 +86,7 @@ Now, start adding the Essential JS 2 Message control to the application. To get 
     <link rel="stylesheet" href="./styles/styles.css">
     <script src="https://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
     <script src="https://cdn.syncfusion.com/ej2/ej2-notifications/dist/global/ej2-notifications.min.js" type="text/javascript"></script>
-    <script src="node_modules/systemjs/dist/system.src.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="system.config.js"></script>
 </head>
 <body>
