@@ -137,7 +137,8 @@ Place the following Progress Bar code in the **index.js**
 ```javascript
 
   var percentageProgress = new ej.progressbar.ProgressBar({
-      value: 40
+      value: 40});
   percentageProgress.appendTo('#percentage');
 
 ```
+{% previewsample "page.domainurl/code-snippet/progressbar/progressbar-cs14" %}
