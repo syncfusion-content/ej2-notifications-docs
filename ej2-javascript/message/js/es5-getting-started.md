@@ -34,32 +34,6 @@ cd quickstart
 npm install
 ```
 
-## Configuring system JS
-
-The [Syncfusion Message packages](#dependencies) should be mapped in the `system.config.js` configuration file.
-
-```bash
-System.config({
-    paths: {
-        'syncfusion:': './node_modules/@syncfusion/'
-    },
-    map: {
-        app: 'app',
-
-        //Syncfusion packages mapping
-        "@syncfusion/ej2-base": "syncfusion:ej2-base/dist/ej2-base.umd.min.js",
-        "@syncfusion/ej2-buttons":"syncfusion:ej2-buttons/dist/ej2-buttons.umd.min.js",
-        "@syncfusion/ej2-popups":"syncfusion:ej2-popups/dist/ej2-popups.umd.min.js",
-        "@syncfusion/ej2-notifications":"syncfusion:ej2-notifications/dist/ej2-notifications.umd.min.js"
-    },
-    packages: {
-        'app': { main: 'app', defaultExtension: 'js' }
-    }
-});
-
-System.import('app');
-```
-
 ## Adding CSS reference
 
 The combined CSS files are available in the Essential JS 2 package root folder. This can be referenced in the `[src/styles/styles.css]` file using the following code.
@@ -86,8 +60,6 @@ Now, start adding the Essential JS 2 Message control to the application. To get 
     <link rel="stylesheet" href="./styles/styles.css">
     <script src="https://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
     <script src="https://cdn.syncfusion.com/ej2/ej2-notifications/dist/global/ej2-notifications.min.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="system.config.js"></script>
 </head>
 <body>
     <!--Element which will render as Message-->
