@@ -73,7 +73,7 @@ The below located script and style file contains all Syncfusion JavaScript (ES5)
        </head>
        <body>
             <!-- Add the HTML <span> element  -->
-             <h1>Badge Component <span>New</span></h1>
+            <h1>Badge Component <span class="e-badge e-badge-primary">New</span></h1>
        </body>
   </html>
 ```
